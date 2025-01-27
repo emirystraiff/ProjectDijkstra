@@ -1,0 +1,12122 @@
+/*Color Variables*/
+:root
+{
+    --yellow: #ECC963;
+    --tangerine: #FBA919;
+    --resumeYellow: #f3ad34;
+    --pink: #FF9C9C; 
+    --text: #605549;
+}
+
+
+/*affects font size of text in section divs*/
+html 
+{
+font-size: 10px;
+}
+
+
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 100%;
+    height:10px;
+    background-color: #ffffff;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    z-index: 50;
+}
+
+#progressBar
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    height:10px;
+    z-index: 53;
+    background-color: rgba(72,155,127,255);
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+}
+
+
+#section_start
+{
+    position: fixed;
+    left:-2px;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_start img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_ClairesIntro
+{
+    position: fixed;
+ left: 0;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_ClairesIntro img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_PreLesson
+{
+    position: fixed;
+    left: 0;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_PreLesson img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_BrainJuice
+{
+    position: fixed;
+  /*  left:560px; */
+   /* left: 22.65dvw;*/
+   left: 0;
+   top: 1px;
+    z-index: 55;
+}
+
+#section_BrainJuice img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_ApplyAlgo
+{
+    position: fixed;
+  /*  left:610px; */
+   /* left: 24.68dvw; */
+   left: 0;
+   top: 1px;
+    z-index: 55;
+}
+
+#section_ApplyAlgo img
+{
+    height: 19px;
+    width: 6px;
+ /*   transform: rotate(90deg);*/
+}
+
+
+
+#section_ClairesProblem
+{
+    position: fixed;
+ /*   left:1860px;*/
+    left: 0; 
+    top: 1px;
+    z-index: 55;
+}
+
+#section_ClairesProblem img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_CheckUnderstanding
+{
+    position: fixed;
+ /*   left:1950px; */
+    left: 0;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_CheckUnderstanding img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_DijkstraAlgo
+{
+    position: fixed;
+ /*   left:2125px; */
+    left: 0;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_DijkstraAlgo img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+#section_Applications
+{
+    position: fixed;
+ /*   left:2388px; */
+    left: 0;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_Applications img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+#section_Conclusion
+{
+    position: fixed;
+   /* left:2441px; */
+   right: -2px;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_Conclusion img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+#section_end
+{
+    position: fixed;
+ /*   left:2467px;*/
+    right: -6px;
+    top: 1px;
+    z-index: 55;
+}
+
+#section_end img
+{
+    height: 19px;
+    width: 6px;
+  /*  transform: rotate(90deg);*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*affects div section height size*/
+.main
+{
+    font-size: 25px;
+    width: 100%;
+    
+    
+}
+
+
+/*======================   Global Usage   =========================*/
+
+*
+{
+    font-family: 'soleil', sans-serif ;
+    font-weight: 300;
+}
+
+p
+{
+font-size: 2.4rem;
+line-height: 1.3;
+}
+
+ul li
+{
+    font-size: 2.4rem;
+line-height: 1.3;
+}
+
+
+.link
+{
+    color: var(--text);
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 3.7rem;
+    font-weight: 500;
+}
+
+.hide
+{
+    display: none !important;
+}
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+    /*
+    width: 3dvw;
+    max-width: 37px;
+    height: 3dvw;
+    max-height: 37px;
+    */
+  
+    outline: 1px solid #999;
+   /* transition: 0.1s all linear; */
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+
+    cursor: pointer;
+  }
+  
+  input:checked {
+    outline: 1.5px solid #999;
+    border: .5rem solid #f5f5f5;
+   /* border: .705dvw solid #f5f5f5;*/
+   /* outline: unset !important;  I added this one for Edge (chromium) support */
+    background-color: #000000;
+  }
+
+  input[type="radio"]
+  {
+
+  }
+
+
+  a:-webkit-any-link {
+    color: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.Section_Gap
+{
+    height: 2em;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        color: #999;
+    }
+
+    100%
+    {
+        color: #000000;
+    }
+}
+
+
+/*======================   Header   =========================*/
+
+
+.Header
+{
+    position: relative;
+    top: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 12px;
+}
+
+
+.Header_Name
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Header_Name a
+{
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;   
+    color: var(--resumeYellow);
+    text-decoration: none;
+    margin: auto;
+
+}
+
+
+
+.Bio
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Bio p
+{
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.Bio_divider hr
+{
+    height: 3px;
+    width: 330px;
+    background-color: var(--resumeYellow);
+    border: none;
+    position: relative;
+    top:-14px;
+}
+
+
+
+.Nav
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Nav_contact
+{
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top:-13px;
+}
+
+
+
+/*======================   Creation of Dijkstra's Algorithm Fun Fact   =========================*/
+
+.DA_FunFact
+{ /*
+    height: 10em;
+    display: grid;
+    grid-template-rows: 0;
+    grid-template-columns: 1.9fr 1fr;*/
+}
+
+.DA_FunFact .Edsger
+{
+    width:100%;
+    grid-column: 2/3;
+
+    display: grid;
+}
+
+.DA_FunFact .Edsger img
+{
+    min-width: 200px;
+    width: 15dvw;
+    max-width: 300px;
+    justify-self: end;
+    position: relative;
+    top:  -30%;
+    right: 25%;
+
+}
+
+
+.DA_FunFact .Info
+{
+    grid-column: 1/2;
+}
+
+
+.DA_FunFact .Info p
+{
+    position: relative;
+    left: 10%;
+    font-size: 1.6rem;
+}
+
+.DA_FunFact .Info p span
+{
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+
+
+/*======================   TitleCard   =========================*/
+
+.TitleCard
+{
+    height: 25dvw;
+    display: flex;
+    justify-content: center;
+}
+
+.TitleCard img
+{
+    width: 85dvw;
+    margin-left: 2%;
+}
+
+
+/*======================   Intro   =========================*/
+
+.Intro
+{
+    height: 18.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Intro .Overview
+{
+
+}
+
+.Intro .Overview p
+{
+margin-bottom: 15px;
+}
+
+
+.Intro .duction 
+{
+
+}
+
+.Intro .duction p
+{
+    margin-top: 15px;
+}
+
+
+
+/*======================   Claire Story Intro   =========================*/
+
+.Claire_Intro
+{
+    height: 45em;
+    display: grid;   
+    grid-template-rows: 5rem .4fr 1fr 1.4fr .6fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Claire_Intro .Headline
+{
+    grid-row: 1/2;
+}
+
+.Claire_Intro .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Claire_Intro .one
+{
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.Claire_Intro .one img
+{
+    grid-column: 2/3;
+    width: 23dvw;
+    max-width: 350px;
+    place-self: start;
+}
+
+.Claire_Intro .one p
+{
+    place-self: start;
+
+}
+
+.Claire_Intro .two
+{
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0;
+}
+
+.Claire_Intro .two img
+{
+    grid-column: 1/2;
+    width: 18dvw;
+    max-width: 300px;
+    place-self: start;
+
+}
+
+.Claire_Intro .two p
+{
+    grid-column: 2/3;
+    padding-left: 15px;
+    justify-self: start;
+    position: relative;
+    top: 3dvw;
+
+}
+
+.Claire_Intro .Map
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Claire_Intro .Map p
+{
+    grid-row: 4/5;
+}
+
+.Claire_Intro .Map a
+{
+    grid-row: 4/5;
+    width: 50dvw;
+    max-width: 900px;
+    align-self: center;
+}
+
+.Claire_Intro .Map a img
+{
+    width: 100%;
+    align-self: center;
+}
+
+
+.Claire_Intro .ButFirst
+{
+    grid-row: 5/6;
+}
+
+.Claire_Intro .ButFirst p
+{
+    
+}
+
+/*======================   Pre Lesson Intro   =========================*/
+
+.PreLesson_Intro
+{
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 5rem .8fr auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.PreLesson_Intro .Headline
+{
+
+}
+
+.PreLesson_Intro .Headline h1
+{
+    margin-top: 15px;
+}
+
+.PreLesson_Intro .DiffGraphIntro
+{
+    
+}
+
+.PreLesson_Intro .DiffGraphIntro p
+{
+    
+}
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    min-width: 90px;
+    width: 18%;
+    max-width: 200px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+/*======================   Pre Lesson Graph1   =========================*/
+
+.PreLesson_Graph1
+{
+    height: 20em;
+    display: grid;   
+    grid-template-rows: 1fr;
+    grid-template-columns: .7fr 1fr;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.PreLesson_Graph1 .Node
+{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    align-self: center;
+}
+
+.PreLesson_Graph1 .NodeExpl p
+{
+    margin-left: 15px;
+}
+
+
+/*======================   Pre Lesson Graph2   =========================*/
+
+.PreLesson_Graph2
+{
+    height: 16em;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: .7fr 1fr;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    align-self: center;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl p
+{
+    margin-left: 15px;
+}
+
+
+
+/*======================   Pre Lesson Graph3   =========================*/
+
+.PreLesson_Graph3
+{
+    height: 23em;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: .7fr 1fr;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-column: 1/2;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 2/3;
+    align-self: center;
+
+
+
+}
+
+.PreLesson_Graph3 .DigraphExpl p
+{
+    margin-left: 15px;
+}
+
+.PreLesson_Graph3 .Roads
+{
+    margin-top: 15px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 2.5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left: 2.5dvw;
+}
+
+
+
+/*======================   Pre Lesson Graph4   =========================*/
+
+.PreLesson_Graph4
+{
+    height: 13em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: .7fr 1fr;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    align-self: center;
+}
+
+.PreLesson_Graph4 .WDigraphExpl p
+{
+    margin-left: 15px;
+}
+
+
+/*======================   Pre Lesson Convert Map   =========================*/
+
+.PreLesson_ConvertMap
+{
+    height: 25em;
+    display: grid; 
+    grid-template-rows: .8fr .6fr;
+    grid-template-columns: 1fr;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.PreLesson_ConvertMap .Expl
+{
+
+}
+
+.PreLesson_ConvertMap .Expl p
+{
+    margin-bottom: 0;
+}
+
+.PreLesson_ConvertMap .Digraph
+{
+    position: relative;
+    top: 10px;
+}
+
+
+/*======================   Brain Juice Intro   =========================*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    display: grid; 
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+
+}
+
+.BrainJuice_Intro .Headline
+{
+
+}
+
+.BrainJuice_Intro .Headline h1
+{
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+}
+
+.BrainJuice_Intro .B4weJump p
+{
+    margin: 0;
+    place-self: center;
+}
+
+
+/*======================   Brain Juice Question EXPANDS   =========================*/
+
+.BrainJuice_Qs
+{
+    background-color: #f5f5f5;
+    height: 7em;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Question1
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4rem 1fr;
+}
+
+.BrainJuice_Qs .Question1 p
+{
+    
+}
+
+.BrainJuice_Qs .Question1 img
+{
+    width: 3.5rem;
+    position: relative;
+    top: 10px;
+}
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 40px;
+}
+
+
+/*======================   Brain Juice Question EXPANDS 1   =========================*/
+
+/* 
+Before: .5em
+after expand: 11em;
+*/
+.BrainJuice_Qs1 
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #Q2text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*======================   Brain Juice Question EXPANDS 2   =========================*/
+
+.BrainJuice_Qs2
+{
+    background-color: #f5f5f5;
+
+    display: grid;  
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.BrainJuice_Qs2 .Expl
+{
+    
+}
+
+.BrainJuice_Qs2 .Expl p
+{
+    margin-top: 5px;
+    position: relative;
+    top:-20px;
+}
+
+
+/*======================   Main Lesson Setup   =========================*/
+
+.MainLesson_Setup
+{
+    height: 59em;
+    display: grid;
+    grid-template-rows: 5rem .6fr .4fr .9fr .6fr;
+    grid-template-columns: 1fr; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Setup .Headline
+{
+
+}
+
+.MainLesson_Setup .Headline h1
+{
+
+}
+
+.MainLesson_Setup .One
+{
+
+}
+
+.MainLesson_Setup .One p
+{
+    position: relative;
+    top: 10px;
+}
+
+.MainLesson_Setup .Lists
+{
+
+}
+
+
+.MainLesson_Setup .Two
+{
+
+}
+
+.MainLesson_Setup .Two p
+{
+    position: relative;
+    top: 10px;
+}
+
+/*======================   Main Lesson update1   =========================*/
+
+.MainLesson_Update1
+{
+    height: 43em;
+    display: grid;   
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Update1 .Steps
+{
+
+}
+
+.MainLesson_Update1 .Steps p
+{
+
+}
+
+.MainLesson_Update1 .One
+{
+
+}
+
+.MainLesson_Update1 .One p
+{
+
+}
+
+.MainLesson_Update1 .End
+{
+
+}
+
+.MainLesson_Update1 .End p
+{
+
+}
+
+/*======================   Main Lesson next2   =========================*/
+
+.MainLesson_Next2
+{
+    height: 35em;
+    display: grid;  
+    grid-template-rows: 1fr 1fr .9fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Next2 .One
+{
+
+}
+
+.MainLesson_Next2 .One p
+{
+
+}
+
+.MainLesson_Next2 .Digraph
+{
+    position: relative;
+    top: -15px;
+}
+
+.MainLesson_Next2 .Lists
+{
+    position: relative;
+    top: 15px;
+}
+
+/*======================   Main Lesson update2   =========================*/
+
+.MainLesson_Update2
+{
+    height: 58em;
+    display: grid;  
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Update2 .One
+{
+
+}
+
+.MainLesson_Update2 .One p
+{
+
+}
+
+.MainLesson_Update2 .end
+{
+
+}
+
+.MainLesson_Update2 .end p
+{
+
+}
+
+/*======================   Main Lesson next3   =========================*/
+
+.MainLesson_Next3
+{
+    height: 100dvw;
+    display: grid;   
+    grid-template-rows: .24fr 45dvw .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Next3 .One
+{
+
+}
+
+.MainLesson_Next3 .One p
+{
+
+}
+
+.MainLesson_Next3 .Digraph
+{
+
+}
+
+.MainLesson_Next3 .Lists
+{
+    position: relative;
+    top: 25px;
+}
+
+/*======================   Main Lesson update3   =========================*/
+
+.MainLesson_Update3
+{
+    height: 48em;
+    display: grid;  
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Update3 .One
+{
+
+}
+
+.MainLesson_Update3 .One p
+{
+
+}
+
+.MainLesson_Update3 .end
+{
+
+}
+
+
+.MainLesson_Update3 .end p
+{
+
+}
+
+
+/*======================   Main Lesson choosenext4   =========================*/
+
+.MainLesson_ChooseNext4
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+
+    height: 13em;
+    display: grid;  
+    grid-template-rows: 95px auto 1fr;
+    /*
+    height: 16em;
+    display: grid;  
+    grid-template-rows: 1fr auto;*/
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+/*
+.MainLesson_ChooseNext4 div
+{
+background-color: #f5f5f5;
+}
+*/
+
+.MainLesson_ChooseNext4 .Question
+{
+    
+}
+
+.MainLesson_ChooseNext4 .Question p
+{
+    margin-top: 5px;
+}
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.MainLesson_ChooseNext4 .Options img
+{
+    max-width: 200px;
+    width: 25%;
+    margin-left: 2.5dvw;
+    margin-right: 2.5dvw;
+}
+
+
+
+.MainLesson_ChooseNext4 .Radio
+{
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.MainLesson_ChooseNext4 .Radio li
+{
+    font-size: 30px;
+    display: inline-block;
+
+}
+
+/*======================   Main Lesson choosenext4 Answer EXPANDS   =========================*/
+
+.MainLesson_ChooseNext4_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+
+}
+
+/*
+Before click: 80px;
+after click: 8em
+*/
+
+
+.MainLesson_ChooseNext4_ANS .chooseNext4_Explanation
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.MainLesson_ChooseNext4_ANS .chooseNext4_Explanation p
+{ /*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_ChooseNext4_ANS .chooseNext4_Explanation p span
+{
+font-weight: 500;
+animation: animate 1s forwards;
+}
+
+.MainLesson_ChooseNext4_ANS .chooseNext4_submit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 2/3;
+}
+
+/*======================   Main Lesson update4   =========================*/
+
+.MainLesson_Update4
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13em;
+    display: grid;  
+    grid-template-rows: 120px auto 1fr;
+    grid-template-columns: 1fr; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Update4 .Question
+{
+
+}
+
+.MainLesson_Update4 .Question p
+{
+    margin-top: 5px;
+}
+
+.MainLesson_Update4 .Options
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainLesson_Update4 .Options a 
+{
+    max-width: 300px;
+    width: 95%;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.MainLesson_Update4 .Options a img
+{
+    max-width: 300px;
+    width: 95%;
+
+    
+
+}
+
+.MainLesson_Update4 .Radio
+{
+
+}
+
+.MainLesson_Update4 .Radio ul
+{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+
+}
+
+.MainLesson_Update4 .Radio li
+{
+    font-size: 30px;
+    display: inline-block;
+}
+
+.MainLesson_Update4 .Radio li:nth-child(1)
+{
+margin-left: -30px;
+}
+
+/*======================   Main Lesson update4 Answer EXPANDS   =========================*/
+
+.MainLesson_Update4_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;   
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/*
+Before click: 80px;
+*/
+
+.MainLesson_Update4_ANS .update4_Explanation
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.MainLesson_Update4_ANS .update4_Explanation p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_Update4_ANS .update4_Explanation p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_Update4_ANS .update4_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*======================   Main Lesson choosenext5   =========================*/
+
+.MainLesson_ChooseNext5
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 12em;
+    display: grid;  
+    grid-template-rows: 80px auto 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_ChooseNext5 .Question
+{
+
+}
+
+.MainLesson_ChooseNext5 .Question p
+{
+    margin-top: 5px;
+}
+
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.MainLesson_ChooseNext5 .Options img
+{
+    max-width: 200px;
+    width: 25%;
+    margin-left: 2.5dvw;
+    margin-right: 2.5dvw;
+}
+
+.MainLesson_ChooseNext5 .Radio
+{
+
+}
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.MainLesson_ChooseNext5 .Radio li 
+{
+    font-size: 30px;
+    display: inline-block;
+}
+
+
+/*======================   Main Lesson choosenext5 Answer EXPANDS   =========================*/
+
+.MainLesson_ChooseNext5_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/*
+Before click: 80px;
+after click: 18em
+*/
+
+.MainLesson_ChooseNext5_ANS .chooseNext5_Explanation
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.MainLesson_ChooseNext5_ANS .chooseNext5_Explanation p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_ChooseNext5_ANS .chooseNext5_Explanation p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_ChooseNext5_ANS .chooseNext5_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*=====================   Main Lesson update5   =========================*/
+
+.MainLesson_Update5
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13em;
+    display: grid;  
+    grid-template-rows: 120px auto 1fr;
+    grid-template-columns: 1fr; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_Update5 .Question
+{
+
+}
+
+.MainLesson_Update5 .Question p
+{
+    margin-top: 5px;
+
+}
+
+
+.MainLesson_Update5 .Options
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainLesson_Update5 .Options a
+{
+    max-width: 300px;
+    width: 95%;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.MainLesson_Update5 .Options a img
+{
+    max-width: 300px;
+    width: 95%;
+}
+
+
+.MainLesson_Update5 .Radio
+{
+
+}
+
+.MainLesson_Update5 .Radio ul
+{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.MainLesson_Update5 .Radio li
+{
+    font-size: 30px;
+    display: inline-block;
+}
+
+.MainLesson_Update5 .Radio li:nth-child(1)
+{
+margin-left: -30px;
+}
+
+
+/*======================   Main Lesson update5 Answer EXPANDS   =========================*/
+
+.MainLesson_Update5_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;   
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/*
+Before click: 80px;
+after click: 8em
+*/
+
+.MainLesson_Update5_ANS .update5_Explanation
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.MainLesson_Update5_ANS .update5_Explanation p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_Update5_ANS .update5_Explanation p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+.MainLesson_Update5_ANS .update5_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*======================   Main Lesson last update   =========================*/
+
+.MainLesson_LastUpdate
+{
+    height: 33em;
+    display: grid;    
+    grid-template-rows: 1fr 1.5fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.MainLesson_LastUpdate .One
+{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.MainLesson_LastUpdate .One p
+{
+
+}
+
+.MainLesson_LastUpdate .Digraph
+{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.MainLesson_LastUpdate .Lists
+{
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+    position: relative;
+    top: 15px;
+}
+
+.MainLesson_LastUpdate .End
+{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    align-self: end;
+}
+
+.MainLesson_LastUpdate .End p
+{
+
+}
+
+/*======================   Main Lesson output   =========================*/
+
+.MainLesson_Output
+{
+    height: 25em;
+    display: grid;  
+    grid-template-rows: 1fr .8fr .2fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+.MainLesson_Output .Congrats
+{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1px 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-image: url("/Animations/FINAL_Fireworks_GIF_thumbnail.gif");
+    background-repeat: no-repeat;
+    background-size:400px;
+    background-position: 50% 10%;
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    position: relative;
+    top: -60px;
+    z-index: -10;
+}
+
+/*
+.MainLesson_Output .Congrats
+{
+    grid-row: 1/2;
+
+    background-image: url("/Animations/FINAL_Fireworks_GIF_thumbnail.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-size: 60%;
+
+    display: grid;
+}*/
+
+.MainLesson_Output .Congrats p
+{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 15px;
+
+    grid-row: 2/3;
+    grid-column: 1/3;
+    z-index: 5;
+
+    place-self: center;
+    position: relative;
+    top: 68px;
+
+    z-index: 0;
+}
+
+.MainLesson_Output .Fireworks
+{
+    width: 80dvw;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    justify-self: center;
+    display: grid;
+}
+
+.MainLesson_Output .Fireworks img
+{
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+
+    place-self: center;
+
+    z-index: -5;
+}
+
+.MainLesson_Output .One
+{
+    grid-row: 2/3;
+
+}
+
+.MainLesson_Output .One p
+{
+
+}
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: -50px;
+
+}
+
+.MainLesson_Output .Output p img
+{
+    width: 20px;
+    height: auto;
+}
+
+/*======================   Claire's Problem   =========================*/
+
+.ClairesProblem
+{
+    height: 30em;
+    display: grid;   
+    grid-template-rows: 5rem 80px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+.ClairesProblem .Headline
+{
+
+}
+
+.ClairesProblem .Headline h1
+{
+    margin-top: 15px;
+
+}
+
+.ClairesProblem .So
+{
+
+}
+
+.ClairesProblem .So p
+{
+
+}
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    grid-template-rows: 150px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Question
+{
+
+}
+
+.ClairesProblem .Box .Question p
+{
+
+}
+
+.ClairesProblem .Box .Radio
+{
+}
+
+.ClairesProblem .Box .Radio ul li
+{
+
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+    justify-self: start;
+    width: 60dvw;
+    z-index: 5;
+
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+    width: 100%;
+    z-index: 5;
+}
+
+
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 90%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -35px;
+    z-index: 5;
+}
+
+
+
+/*======================   Claire's Problem Answer EXPANDS   =========================*/
+
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    /*
+    background-color: #f5f5f5;
+    height: 14em;
+    display: grid;    
+    grid-template-rows: auto 80px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;*/
+
+    position:relative;
+}
+
+/* all closed/before clicked: .5em
+normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+
+.ClairesProblem_ANS .clairesAnswer_Explanation
+{
+    display: grid;
+    height: 100%;
+    width:100%;
+    /*
+    grid-template-rows: 40px auto;
+    grid-template-columns: 1fr;
+    */
+    position: absolute;
+    object-fit: contain;
+    padding-left: 15px;
+}
+
+.ClairesProblem_ANS .clairesAnswer_Explanation p
+{
+    position: relative;
+    top: 3dvw;
+    height: 50%;
+    margin: 0;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    animation: animate 1s forwards;
+}
+
+.ClairesProblem_ANS .clairesAnswer_Explanation p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+
+/*OWN DIV*/
+.ClairesProblem_ANS_Correct
+{
+    background-color: #f5f5f5;
+/*
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    height: 0;
+    position: relative;
+    display: grid;
+    justify-items: center;*/
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+
+/*s
+.ClareCelebratingGIF
+{
+    position: absolute;
+    top: -180px;
+    left:-8px;
+ width: 100%;
+ grid-row: 1/3;
+ grid-column: 1/3;
+}
+*/
+
+.ClareCelebrating
+{/*
+    width: 100%;
+    display: grid;
+    position: absolute;
+    object-fit: contain;
+
+width: 100%;
+    display: flex;
+
+    width: 100%;
+    position: absolute;
+    top: -350px;
+    left: -255px;
+*/
+
+flex-shrink: 0;
+width: 700px;
+height: auto;
+position: relative;
+z-index: 0;
+}
+
+.ClareCelebratingGIF
+{
+    width: 700px;
+    position: absolute;
+    top: -285px;
+    left: -4px;
+    z-index: 0;
+}
+    /* ABOVE
+ width: 200px;
+justify-self: center;
+ display:block;
+ margin:auto;*/
+ /*
+justify-self: center;
+position: absolute;
+top: -283px;
+left: -185px;*/
+
+/*
+.ClareCelebrating
+{
+
+    justify-self: center;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    width: 100%;
+    display: grid;
+    object-fit: contain;
+    position: absolute;
+    top: -65px;
+    left: -5px;
+}
+
+.ClareCelebratingGIF
+{
+ width: 100%;
+
+}
+*/
+
+
+/*
+.ClareCelebrating
+{
+
+    background-image: url('Animations/Final_Clare_Celebrating_GIF_new.gif');
+    background-size: cover;
+    background-position: 80% 90%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-overflow: visible;
+    padding-top: 100px;
+
+}
+*/
+
+/*
+.ClareCelebrating
+{
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 100%;
+    display: grid;
+    object-fit: contain;
+    position: relative;
+top: -12dvw;
+}
+
+
+.ClareCelebratingGIF
+{
+position: relative;
+left: -5px;
+ width: 70dvw;
+ max-width: 970px;
+place-self: center;
+
+}
+*/
+
+/*
+.ClairesProblem_ANS .clairesAnswer_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+    position: relative;
+    top: -30dvw;
+}
+
+
+.ClareCelebrating
+{
+    justify-self: center;
+}
+
+
+.ClareCelebratingGIF
+{
+ width: 120%;
+ max-width: 1350px;
+position: relative;
+top: -30dvw;
+left: -6.8dvw;
+
+}
+*/
+
+/*OWN DIV*/
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+    justify-items: center;
+}
+
+
+
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*======================   Check Understanding w/remark question  =========================*/
+
+.CheckUnderstanding_Remark
+{
+    height: 10em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*======================   Check Understanding remark   =========================*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+    height: 80px;
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 80px
+when Answer appear, height:  44em*/
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p a:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p a:nth-child(1) img
+{
+    width: 100%;
+}
+
+
+.CheckUnderstanding_Remark_ANS .Expl p a:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p a:nth-child(2) img
+{
+    width: 100%;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*======================   Check Understanding Quiz1   =========================*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*======================   Check Understanding Quiz1 Answer EXPANDS   =========================*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* 
+before: 80px
+after clicked: 18em
+*/
+
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*======================   Check Understanding Quiz2   =========================*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+
+.CheckUnderstanding_Quiz2 .Radio ul li label p
+{
+    width: 90%;
+    padding-left:4.5dvw;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -35px;
+}
+
+
+/*======================   Check Understanding Quiz2 Answer EXPANDS   =========================*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* 
+before: 80px
+after clicked: 18em
+*/
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+    animation: animate 1s forwards;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+    animation: animate 1s forwards;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+
+
+/*======================   Dijkstra Algorithm Review Terms   =========================*/
+
+.DA_Terms
+{
+    height: 31em;
+    display: grid;   
+    grid-template-rows: 5rem .2fr 3fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Terms .Headline
+{
+
+}
+
+.DA_Terms .Headline h1
+{
+    margin-top: 15px;
+}
+
+.DA_Terms .One
+{
+
+}
+
+.DA_Terms .One p
+{
+
+}
+
+.DA_Terms .Review
+{
+
+}
+
+.DA_Terms .Review p
+{
+
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 20px;
+    margin-top: 0px;
+    display: block;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.DA_Terms .Review li
+{
+    list-style-type: disc !important;
+    display: list-item;
+    font-family: 'soleil', sans-serif ;
+    font-size: 2.4rem;
+}
+
+/*======================   Dijkstra Algorithm Note EXPANDS   =========================*/
+
+/* @769 ish
+Before: 4em
+After expands, 24em*/
+
+.DA_Terms_Note
+{
+    height: 4em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Terms_Note .Algo_note_Btn
+{
+    grid-row: 1/2;
+    display: grid;
+}
+
+.DA_Terms_Note .Algo_note_Btn button
+{
+    align-self: center;
+    justify-self: start;
+}
+
+.DA_Terms_Note .Algo_note
+{
+    align-self: start;
+    grid-row: 2/3;
+    display: grid;
+}
+
+.DA_Terms_Note .Algo_note p
+{
+    align-self: start;
+}
+
+/*======================   Dijkstra Algorithm Limitations   =========================*/
+
+.DA_Limits
+{
+    height: 22em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*======================   Dijkstra's ALGORITHM pic   =========================*/
+
+.DA_Algorithm
+{
+    height: 25em;
+    display: grid;  
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Algorithm div
+{
+    display: grid;
+}
+
+.DA_Algorithm div a
+{
+    width: 95%;
+    max-width: 650px;
+    height: auto;
+
+    place-self: center;
+
+    aspect-ratio: 1;
+
+}
+
+.DA_Algorithm div a img
+{
+    width: 100%;
+
+}
+
+/*======================   Applications   =========================*/
+
+.Applications
+{
+    height: 25.5em;
+    display: grid;   
+    grid-template-rows: 5rem .3fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.Applications .Headline
+{
+
+}
+
+.Applications .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Applications .App_Intro
+{
+
+}
+
+.Applications .App_Intro p
+{
+
+}
+
+.Applications .Bullets
+{
+
+}
+
+
+
+
+.app_bullets
+{
+    width: 90%;
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.app_bullets li
+{
+    text-align: left;
+    vertical-align: top;
+    padding: .1rem 0em .1rem 0em;
+    margin: 0;
+    width: 100%;
+}
+
+.app_bullets_microchip span
+{
+    width: 100%;
+    float: left;
+    position: relative;
+    left: 65px;
+    top: -57px;
+}
+
+.app_bullets_microchip::before
+{
+    display: inline-block;
+    content: url("Assets/Assets_Microchip_fortypx.png");
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    top: -15px;
+    left: -10px;
+}
+
+.app_bullets_maps span
+{
+    float: left;
+    position: relative;
+    left: 65px;
+    top: -55px;
+    width: 100%;
+}
+
+.app_bullets_maps::before
+{
+    display: inline-block;
+    content: url("Assets/Assets_PhoneMapsH40.png");
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    top: -9px;
+    left: -6px;
+}
+
+.app_bullets_truck span
+{
+    float: left;
+    position: relative;
+    left: 65px;
+    top: -35px;
+    width: 100%;
+}
+
+.app_bullets_truck
+{
+
+}
+
+.app_bullets_truck::before
+{
+    display: inline-block;
+    content: url("Assets/Assets_FastTruckW50.png");
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    top: 0px;
+    left: -18px;
+}
+
+
+/*======================   Conclusion   =========================*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+/*
+.Conclusion .Bye
+{
+    background-image: url("Animations/FINAL_Claire_Driving_GIF.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 80% 40%;
+
+    max-height: 500px;
+    height: 35dvw;
+    z-index: -5;
+}
+*/
+/*======================   Footer   =========================*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*======================   Buttons   =========================*/
+
+
+.button_hint
+{
+    width: 115px;
+    height: 55px;
+
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #f5f5f5;
+
+    cursor: pointer;
+}
+
+.button_hint_active
+{
+    width: 115px;
+    height: 55px;
+
+    font-weight: 600;
+
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #f0f0f0;
+    color: #f7f7f7;
+
+    cursor: pointer;
+}
+
+
+.button_hint img
+{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.button_hint_active img
+{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.button_hint p
+{
+    height: 25px;
+    font-weight: 500;
+    font-size: 2rem;
+    align-self: center;
+    padding-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.button_hint_active p
+{
+    height: 25px;
+    font-weight: 500;
+    font-size: 2rem;
+    align-self: center;
+    padding-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+
+
+
+
+.button_hintMore
+{
+    width: 330px;
+    height: 40px;
+
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+
+    display: grid;
+
+    background-color: #f5f5f5;
+    z-index: 6;
+
+    cursor: pointer;
+}
+
+
+.button_hintMore_active
+{
+    width: 330px;
+    height: 40px;
+
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+
+    display: grid;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    background-color: #f0f0f0;
+    color: #f7f7f7;
+}
+
+.button_hintMore p
+{
+    grid-row: 1/2;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-left: 3px;
+
+    font-weight: 400;
+    z-index: 5;
+
+    place-self: center;
+    margin: 0;
+    position: relative;
+    top: 3px;
+}
+
+.button_hintMore_active p
+{
+    grid-row: 1/2;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-left: 3px;
+
+    font-weight: 400;
+    z-index: 5;
+
+    place-self: center;
+    margin: 0;
+    position: relative;
+    top: 3px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+.btn_submit
+{
+  width: 130px;
+  height: 65px;
+
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+
+  display: flex;
+
+  background-color: #f0f0f0;
+/*
+  position:relative;
+  left: 10px;*/
+  cursor: pointer;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 130px;
+    height: 65px;
+
+    border-radius: 5px;
+    border: 2px solid #000000;
+
+    display: flex;
+
+    background-color: #000000;
+/*
+    position:relative;
+    left: 10px;*/
+
+    cursor: pointer;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  height: 25px;
+  font-weight: 500;
+  font-size: 25px;
+  align-self: center;
+  padding-left: 14px;
+  color: #f7f7f7;
+  margin:0;
+  line-height:30px;
+}
+
+
+
+.btn_submit_active p
+{
+  height: 25px;
+  font-weight: 500;
+  font-size: 25px;
+  align-self: center;
+  padding-left: 14px;
+  color: white;
+  margin:0;
+
+  line-height:30px;
+}
+
+
+
+
+
+
+
+
+.remark1_revealSubmit
+{
+    display: grid;
+    justify-items: center;
+    background-color: #f5f5f5;
+}
+
+
+.button_RevealRemark1
+{
+    width: 180px;
+    height: 70px;
+
+    border-radius: 5px;
+    border: 2px solid #bebebe;
+
+    display: grid;
+
+    background-color: #f5f5f5;
+
+    cursor: pointer;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 180px;
+    height: 70px;
+
+    font-weight: 600;
+
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+
+    display: grid;
+
+    background-color: #f0f0f0;
+    color: #f7f7f7;
+
+    cursor: pointer;
+}
+
+
+.button_RevealRemark1 p
+{
+    height: 25px;
+    font-weight: 500;
+    font-size: 20px;
+
+    place-self: center;
+}
+
+.button_RevealRemark1_active p
+{
+    height: 25px;
+    font-weight: 500;
+    font-size: 20px;
+
+    place-self: center;
+
+    color: white;
+}
+
+
+
+
+/*======================   Universal IMG styles   =========================*/
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph a
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+.Digraph a img
+{
+    width: 100%;
+}
+
+
+
+.Lists
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Lists img
+{
+    width: 25%;
+    max-width: 150px;
+    min-width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    aspect-ratio: 18/25;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================   Media Queries   =========================*/
+
+/*
+NOTES
+Mobile: 320 ~ 480
+iPad / Tablet: 481 ~ 768
+Small: 769 ~ 1024
+Desktop / Large: 1025 ~ 1200
+Extra Large: 1201+
+*/
+
+/*Extra Exra LargeX*/
+@media (min-width:2246px)
+{
+
+
+    .Bio_divider hr
+    {
+        top:-20px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-24px;
+    }
+
+    input 
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    input:checked {
+        border: .5rem solid #f5f5f5;
+      }
+
+ 
+      body
+      {
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+      
+      
+
+    html
+    {
+        font-size: 16px;
+    }
+
+    .main
+    {
+        font-size: 36px;
+    }
+
+    .Intro
+    {
+        height: 15em;
+    }
+
+    .Claire_Intro
+    {
+        height: 53em;
+    }
+
+
+    .BrainJuice_Qs
+    {
+        height: 5em;
+    }
+
+    .DA_Terms
+    {
+        height: 28em;
+    }
+
+
+    .DA_Limits
+    {
+        height: 20em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem .Box
+{
+    grid-template-rows: .5fr auto;
+}
+
+.ClairesProblem .Box .Radio ul li
+{
+    width: 50dvw;
+
+}
+
+
+.ClareCelebrating
+{
+width: 1100px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 1100px;
+    top: -415px;
+    left: -7px;
+}
+
+
+.ClairesProblem
+{
+    height: 25em;
+}
+
+.MainLesson_Update2
+{
+    height: 53em;
+}
+
+.MainLesson_Next3
+{
+    grid-template-rows: .24fr 1fr .4fr;
+    height: 29em;
+}
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.BrainJuice_Intro .B4weJump
+{
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1
+{
+    grid-template-rows: 95px auto;
+
+}
+
+
+
+
+
+.Lists img
+{
+    max-width: 250px;
+}
+
+
+
+
+
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+.button_hintMore p
+{
+    font-size: 20px;
+
+}
+
+.button_hintMore_active p
+{
+    font-size: 20px;
+}
+
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 30px;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 30px;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+}
+
+
+/*Extra Exra LargeX*/
+@media (min-width:2081px) and (max-width: 2245px)
+{
+
+    .Bio_divider hr
+    {
+        top:-20px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-24px;
+    }
+
+    input 
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    input:checked {
+        border: .5rem solid #f5f5f5;
+      }
+
+ 
+      body
+      {
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+      
+      
+
+    html
+    {
+        font-size: 16px;
+    }
+
+    .main
+    {
+        font-size: 36px;
+    }
+
+    .Intro
+    {
+        height: 15em;
+    }
+
+    .Claire_Intro
+    {
+        height: 53em;
+    }
+
+
+    .BrainJuice_Qs
+    {
+        height: 5em;
+    }
+
+    .DA_Terms
+    {
+        height: 30em;
+    }
+
+
+    .DA_Limits
+    {
+        height: 20em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem .Box
+{
+    grid-template-rows: .5fr auto;
+}
+
+.ClairesProblem .Box .Radio ul li
+{
+    width: 50dvw;
+
+}
+
+.ClairesProblem
+{
+    height: 25em;
+}
+
+
+
+.ClareCelebrating
+{
+width: 1100px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 1100px;
+    top: -415px;
+    left: -6px;
+}
+
+
+
+
+.MainLesson_Update2
+{
+    height: 53em;
+}
+
+.MainLesson_Next3
+{
+    grid-template-rows: .24fr 1fr .4fr;
+    height: 29em;
+}
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update4
+{
+    grid-template-rows: 180px auto 1fr;
+}
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5
+{
+    grid-template-rows: 180px auto 1fr;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.BrainJuice_Intro .B4weJump
+{
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1
+{
+    grid-template-rows: 95px auto;
+
+}
+
+
+
+
+
+.Lists img
+{
+    max-width: 250px;
+}
+
+
+
+
+
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+.button_hintMore p
+{
+    font-size: 20px;
+
+}
+
+.button_hintMore_active p
+{
+    font-size: 20px;
+}
+
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 30px;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 30px;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+}
+
+
+/*Extra Exra LargeX*/
+@media (min-width:2001px) and (max-width: 2080px)
+{
+
+    .Bio_divider hr
+    {
+        top:-20px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-24px;
+    }
+
+    input 
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    input:checked {
+        border: .5rem solid #f5f5f5;
+      }
+
+ 
+      body
+      {
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+      
+      
+
+    html
+    {
+        font-size: 16px;
+    }
+
+    .main
+    {
+        font-size: 36px;
+    }
+
+    .Intro
+    {
+        height: 15em;
+    }
+
+    .Claire_Intro
+    {
+        height: 53em;
+    }
+
+
+    .BrainJuice_Qs
+    {
+        height: 5em;
+    }
+
+    .DA_Terms
+    {
+        height: 30em;
+    }
+
+
+    .DA_Limits
+    {
+        height: 20em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem .Box
+{
+    grid-template-rows: .5fr auto;
+}
+
+.ClairesProblem .Box .Radio ul li
+{
+    width: 50dvw;
+
+}
+
+.ClairesProblem
+{
+    height: 28em;
+}
+
+
+
+.ClareCelebrating
+{
+width: 1100px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 1100px;
+    top: -415px;
+    left: -6px;
+}
+
+
+
+
+.MainLesson_Update2
+{
+    height: 53em;
+}
+
+.MainLesson_Next3
+{
+    grid-template-rows: .24fr 1fr .4fr;
+    height: 29em;
+}
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update4
+{
+    grid-template-rows: 180px auto 1fr;
+}
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5
+{
+    grid-template-rows: 180px auto 1fr;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.BrainJuice_Intro .B4weJump
+{
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1
+{
+    grid-template-rows: 95px auto;
+
+}
+
+
+
+
+
+.Lists img
+{
+    max-width: 250px;
+}
+
+
+
+
+
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+.button_hintMore p
+{
+    font-size: 20px;
+
+}
+
+.button_hintMore_active p
+{
+    font-size: 20px;
+}
+
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 30px;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 30px;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 30px;
+    margin:0;
+    padding-bottom: 3px;
+}
+}
+
+
+/*Extra Exra LargeX*/
+@media (min-width:1621px) and (max-width: 2000px)
+{
+
+    .Bio_divider hr
+    {
+        top:-17px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-18px;
+    }
+
+
+    input 
+{
+    width: 40px;
+    height: 40px;
+}
+
+    html
+    {
+        font-size: 12.5px;
+    }
+
+    .main
+    {
+        font-size: 30px;
+    }
+
+    .Intro
+    {
+        height: 13em;
+    }
+
+    .Claire_Intro
+    {
+        height: 53em;
+    }
+
+    .BrainJuice_Qs
+    {
+        height: 5em;
+    }
+
+    .CheckUnderstanding_Remark
+    {
+        height: 8em;
+    }
+
+    .MainLesson_Setup
+    {
+    height: 59em;
+    display: grid;
+    grid-template-rows: 5rem 300px .4fr 500px .6fr;
+    grid-template-columns: 1fr; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    }
+
+    .MainLesson_Update2
+    {
+        height: 46em;
+        grid-template-rows: .5fr .3fr 100px;
+
+    }
+
+    .MainLesson_Next3
+    {
+        grid-template-rows: .24fr .7fr .4fr;
+        height: 32em;
+    }
+
+    .MainLesson_Update3
+    {
+        height: 42em;
+        
+    }
+
+    .DA_Terms
+    {
+    height: 27em;
+    }
+
+
+    .DA_Limits
+    {
+    height: 18em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem
+{
+    height: 25em;
+}
+
+
+
+.ClareCelebrating
+{
+width: 1100px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 1100px;
+    top: -460px;
+    left: -4px;
+}
+
+
+
+.PreLesson_Graph1 .Node img
+{
+    max-width: 400px;
+}
+.PreLesson_Graph2 .Weighted img
+{
+    max-width: 400px;
+}
+.PreLesson_Graph3 .Digraphex img
+{
+    max-width: 400px;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    max-width: 400px;
+}
+
+
+
+
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+
+}
+
+
+
+/*Extra Exra LargeX*/
+@media (min-width:1446px) and (max-width: 1620px)
+{
+
+    .Bio_divider hr
+    {
+        top:-17px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-18px;
+    }
+
+
+    input 
+{
+    width: 37px;
+    height: 37px;
+}
+
+    html
+    {
+        font-size: 12.5px;
+    }
+
+    .main
+    {
+        font-size: 30px;
+    }
+
+    .Intro
+    {
+        height: 13em;
+    }
+
+    .Claire_Intro
+    {
+        height: 53em;
+    }
+    .BrainJuice_Qs
+    {
+        height: 5em;
+    }
+
+    .CheckUnderstanding_Remark
+    {
+        height: 8em;
+    }
+
+    .MainLesson_Update2
+    {
+        height: 52em;
+        grid-template-rows: .5fr .3fr 100px;
+
+    }
+
+    .MainLesson_Next3
+    {
+        grid-template-rows: .24fr .7fr .4fr;
+        height: 32em;
+    }
+
+    .MainLesson_Update3
+    {
+        height: 42em;
+        
+    }
+
+    .DA_Terms
+    {
+    height: 27em;
+    }
+
+
+    .DA_Limits
+    {
+    height: 18em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem
+{
+    height: 24em;
+}
+
+
+
+
+.ClareCelebrating
+{
+width: 1000px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 1000px;
+    top: -398px;
+    left: -4px;
+}
+
+
+
+
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+
+}
+
+
+
+/*Extra Large*/
+@media (min-width:1201px) and (max-width: 1445px)
+{
+
+    .Bio_divider hr
+    {
+        top:-17px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-18px;
+    }
+
+
+    input 
+{
+    width: 35px;
+    height: 35px;
+}
+    
+    html
+    {
+        font-size: 12.5px;
+    }
+
+    .main
+    {
+        font-size: 30px;
+    }
+
+    .Intro
+    {
+        height: 15em;
+    }
+
+    .BrainJuice_Qs
+    {
+        height: 6em;
+    }
+
+    .MainLesson_Update2
+    {
+        height: 52em;
+    }
+
+    .MainLesson_Next3
+    {
+        grid-template-rows: .24fr .7fr .4fr;
+        height: 32em;
+    }
+
+    .DA_Terms
+    {
+    height: 27em;
+    }
+
+    .DA_Limits
+    {
+    height: 18em;
+    }   
+
+    .MainLesson_Output .Output p
+    {
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+
+    }
+
+    .ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:60px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -45px;
+}
+
+.ClairesProblem
+{
+    height: 65rem;
+}
+
+/*
+.ClareCelebrating
+{
+    top: -270px;
+    left: -7px;
+}
+
+.ClareCelebratingGIF
+{
+ width: 100%;
+
+}
+*/
+
+
+.ClareCelebrating
+{
+width: 900px;
+}
+
+.ClareCelebratingGIF
+{
+    width: 900px;
+    top: -335px;
+    left: -4px;
+}
+
+
+.MainLesson_ChooseNext4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+.MainLesson_Update4_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.MainLesson_Update5_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.ClairesProblem_ANS_Btn
+{
+    height: 100px;
+}
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    height: 100px;
+    grid-template-rows: auto 100px;
+}
+
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    height: 13.5em;
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    /*
+    height: 11.5em;*/
+    height: 13.5em;
+
+}  
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    height: 12.5em;
+
+}
+
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    height: 13.5em;
+}
+
+.CheckUnderstanding_Remark
+{
+    height: 8.5em;
+}
+
+
+
+    /*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint_active
+{
+    width: 150px;
+    height: 60px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+    position: relative;
+    top: -5px;
+}
+
+.button_hint img
+{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.button_hint_active img
+{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+
+
+.button_hintMore
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+.button_hintMore_active
+{
+    width: 400px;
+    height: 50px;
+}
+
+
+
+.btn_submit
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+  padding-bottom: 3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+padding-bottom: 3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width:270px;
+    height: 60px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-bottom: 3px;
+}
+
+
+
+
+}
+
+/*Desktop */
+@media (min-width:1025px) and (max-width: 1200px)
+{
+
+    input 
+{
+    width: 33px;
+    height: 33px;
+}
+
+.BrainJuice_Qs
+{
+    height: 6em;
+}
+
+    .MainLesson_Next3
+    {
+        height: 37em;
+    }
+
+    .DA_Terms
+    {
+    height: 27em;
+    }
+
+
+    .DA_Limits
+    {
+    height: 18em;
+    }   
+
+    /*===========   Main Lesson choosenext4   ===========*/
+
+    .MainLesson_ChooseNext4
+    {
+        height: 15em;
+    }
+    
+    
+    /*===========   Main Lesson update4   ===========*/
+    
+    .MainLesson_Update4
+    {
+        /*
+        height: 11.5em;*/
+        height: 15em;
+
+    }  
+    
+    /*===========   Main Lesson choosenext5   ===========*/
+    
+    .MainLesson_ChooseNext5
+    {
+        height: 15em;
+
+    }
+    
+    
+    
+    /*===========   Main Lesson update5   ===========*/
+    
+    .MainLesson_Update5
+    {
+        height: 15em;
+    }
+    
+    .CheckUnderstanding_Remark
+    {
+        height: 8em;
+    }
+
+    
+    .ClareCelebrating
+    {
+    width: 800px;
+    }
+    
+    .ClareCelebratingGIF
+    {
+        width: 800px;
+        top: -310px;
+        left: -4px;
+    }
+
+
+}
+
+/*Small STYLED TO THIS DIM.
+*/
+@media (min-width:769px) and (max-width: 1024px)
+{
+    .ClareCelebrating
+    {
+    width: 800px;
+    }
+    
+    .ClareCelebratingGIF
+    {
+        width: 800px;
+        top: -310px;
+        left: -4px;
+    }
+
+   
+}
+
+@media (min-width:581px) and (max-width: 768px)
+{
+        
+html
+{
+    font-size: 7.5px;
+    overflow-x: hidden;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.main
+{
+    font-size: 22px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+input 
+{
+    width: 25px;
+    height: 25px;
+}
+
+/*===========   Header   ===========*/
+
+
+.Bio_divider hr
+{
+    top:-13px;
+}
+
+
+.Nav_contact
+{
+    top:-10px;
+}
+
+
+/*===========   TitleCard   ===========*/
+
+.TitleCard
+{
+}
+
+.TitleCard img
+{
+
+}
+
+
+
+/*===========   Intro   ===========*/
+
+.Intro
+{
+    height: 15.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*===========   Claire Story Intro   ===========*/
+
+.Claire_Intro
+{
+    height: 40em;
+    grid-template-rows: 5rem 220px 150px .5fr .6fr;
+}
+
+
+.Claire_Intro .two p
+{
+    position: relative;
+    top: -1dvw;
+}
+
+/*===========   Pre Lesson Intro   ===========*/
+
+.PreLesson_Intro
+{
+    height: 20em;
+}
+
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 0;
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+
+
+/*===========   Pre Lesson Graph1   ===========*/
+
+.PreLesson_Graph1
+{
+    height: 26em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+
+}
+
+.PreLesson_Graph1 .Node
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Graph2   ===========*/
+
+.PreLesson_Graph2
+{
+    height: 24em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 70%;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    grid-row: 1/2;
+}
+
+
+
+/*===========   Pre Lesson Graph3   ===========*/
+
+.PreLesson_Graph3
+{
+    height: 33em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr auto;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-row: 2/3;
+
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.PreLesson_Graph3 .Roads
+{
+    justify-content: space-evenly;
+    width: 70%;
+    margin-bottom: 5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 0;
+
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left: 0;
+}
+
+
+
+/*===========   Pre Lesson Graph4   ===========*/
+
+.PreLesson_Graph4
+{
+    height: 20em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Convert Map   ===========*/
+
+.PreLesson_ConvertMap
+{
+    height: 23em;
+}
+
+
+/*===========   Brain Juice Intro   ===========*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+}
+
+.BrainJuice_Intro .Headline
+{
+    width: 350px;
+    padding-left: 15px;
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS   ===========*/
+
+.BrainJuice_Qs
+{
+    height: 5em;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 25dvw;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 1   ===========*/
+
+.BrainJuice_Qs1 
+{
+
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 2   ===========*/
+
+.BrainJuice_Qs2
+{
+
+    padding-top: 25px;
+}
+
+
+/*===========   Main Lesson Setup   ===========*/
+
+.MainLesson_Setup
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson update1   ===========*/
+
+.MainLesson_Update1
+{
+    height: 40em; 
+    grid-template-rows: 140px 1fr 1fr 1fr;
+}
+
+/*===========   Main Lesson next2   ===========*/
+
+.MainLesson_Next2
+{
+    height: 30em;
+    grid-template-rows: .8fr .5fr .6fr;
+}
+
+
+/*===========   Main Lesson update2   ===========*/
+
+.MainLesson_Update2
+{
+    height: 51em;
+}
+
+
+/*===========   Main Lesson next3   ===========*/
+
+.MainLesson_Next3
+{
+    height: 25em;
+    display: grid;   
+    grid-template-rows: .24fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+/*===========   Main Lesson update3   ===========*/
+
+.MainLesson_Update3
+{
+    height: 40em;
+}
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    /*
+    height: 12em;*/
+    height: 45dvw;
+}
+
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 0;
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext4 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext4_ANS
+{
+
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    /*
+    height: 12em;*/
+    height: 45dvw;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update4 Answer EXPANDS   ===========*/
+
+.MainLesson_Update4_ANS
+{
+}
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    /*
+    height: 11em;*/
+    height: 40dvw;
+}
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 0;
+}
+
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext5 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext5_ANS
+{
+}
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    /*
+    height: 12em;*/
+    height: 45dvw;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update5 Answer EXPANDS   ===========*/
+
+.MainLesson_Update5_ANS
+{
+}
+
+/*===========   Main Lesson last update   ===========*/
+
+.MainLesson_LastUpdate
+{
+    height: 30em; 
+    grid-template-rows: .8fr 1.4fr 1fr 1fr;
+}
+
+
+/*===========   Main Lesson output   ===========*/
+
+.MainLesson_Output
+{
+    height: 25em;
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-size:350px;
+    overflow: visible;
+}
+
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+    display: flex;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    line-height: 3;
+    text-align: center;
+
+}
+
+
+/*===========   Claire's Problem   ===========*/
+
+.ClairesProblem
+{
+    height: 29em;
+    display: grid;   
+    grid-template-rows: 5rem 60px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    grid-template-rows: 140px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Radio li
+{
+
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 100%;
+    margin-left:40px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -25px;
+}
+
+/*===========   Claire's Problem Answer EXPANDS   ===========*/
+
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+}
+
+/* normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+
+
+
+
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+    height: 75px;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*===========   Check Understanding w/remark question  ===========*/
+
+.CheckUnderstanding_Remark
+{
+    height: 8.5em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*===========   Check Understanding remark   ===========*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 4em
+when Answer appear, height:  */
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*===========   Check Understanding Quiz1   ===========*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz1 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*===========   Check Understanding Quiz2   ===========*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz2 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+/*===========   Dijkstra Algorithm Review Terms   ===========*/
+
+.DA_Terms
+{
+    height: 27em;
+    grid-template-rows: 5rem .2fr 3fr;
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 5px;
+}
+
+
+/*===========   Dijkstra Algorithm Note EXPANDS   ===========*/
+
+.DA_Terms_Note
+{
+}
+
+
+/*===========   Dijkstra Algorithm Limitations   ===========*/
+
+.DA_Limits
+{
+    height: 22em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*===========   Dijkstra's ALGORITHM pic   ===========*/
+
+.DA_Algorithm
+{
+    height: 23em;
+}
+
+
+/*===========   Applications   ===========*/
+
+.Applications
+{
+    height: 29em;
+}
+
+
+.app_bullets li
+{
+    width: 55dvw;
+}
+
+
+.app_bullets_microchip::before
+{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+
+.app_bullets_maps::before
+{
+    position: relative;
+    top: -9px;
+    left: 3px;
+}
+
+
+.app_bullets_truck::before
+{
+
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+
+/*===========   Conclusion   ===========*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+
+/*===========   Footer   ===========*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint_active
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+}
+
+
+
+.button_hintMore
+{
+    width: 250px;
+}
+
+
+.button_hintMore_active
+{
+    width: 250px;
+}
+
+
+
+.btn_submit
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+  padding-top: 8px;
+  position: relative;
+  left:-3px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+  padding-top: 8px;
+  position: relative;
+  left:-3px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+
+
+
+
+}
+
+/*iPad / Tablet*/
+@media (min-width:491px) and (max-width: 580px)
+{
+
+    .Bio_divider hr
+    {
+        top:-12px;
+    }
+    
+
+    .Nav_contact
+    {
+        top:-8px;
+    }
+    
+html
+{
+    font-size: 6.66666666666667px;
+    overflow-x: hidden;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.main
+{
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+input 
+{
+    width: 20px;
+    height: 20px;
+}
+
+/*===========   Header   ===========*/
+
+.Header_Name a
+{
+    font-size: 60px;
+}
+
+
+.Bio p
+{
+
+}
+
+/*
+.Bio_divider hr
+{
+    width: 220px;
+}*/
+
+
+.Nav_contact
+{ 
+
+}
+
+
+
+
+/*===========   TitleCard   ===========*/
+
+.TitleCard
+{
+}
+
+.TitleCard img
+{
+
+}
+
+
+
+/*===========   Intro   ===========*/
+
+.Intro
+{
+    height: 17.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*===========   Claire Story Intro   ===========*/
+
+.Claire_Intro
+{
+    height: 40em;
+    grid-template-rows: 5rem 220px 150px 250px .6fr;
+}
+
+.Claire_Intro .one img
+{
+    place-self: center;
+    
+}
+
+.Claire_Intro .two p
+{
+    position: relative;
+    top: -1dvw;
+}
+
+/*===========   Pre Lesson Intro   ===========*/
+
+.PreLesson_Intro
+{
+    height: 20em;
+}
+
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 0;
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+
+
+/*===========   Pre Lesson Graph1   ===========*/
+
+.PreLesson_Graph1
+{
+    height: 26em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+
+}
+
+.PreLesson_Graph1 .Node
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Graph2   ===========*/
+
+.PreLesson_Graph2
+{
+    height: 24em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 70%;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    grid-row: 1/2;
+}
+
+
+
+/*===========   Pre Lesson Graph3   ===========*/
+
+.PreLesson_Graph3
+{
+    height: 31em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr auto;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-row: 2/3;
+
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.PreLesson_Graph3 .Roads
+{
+    justify-content: space-evenly;
+    width: 70%;
+    margin-bottom: 5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 0;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left: 0;
+}
+
+
+
+/*===========   Pre Lesson Graph4   ===========*/
+
+.PreLesson_Graph4
+{
+    height: 20em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 70%;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Convert Map   ===========*/
+
+.PreLesson_ConvertMap
+{
+    height: 23em;
+}
+
+
+/*===========   Brain Juice Intro   ===========*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+}
+
+.BrainJuice_Intro .Headline
+{
+    width: 350px;
+    padding-left: 15px;
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS   ===========*/
+
+.BrainJuice_Qs
+{
+    height: 5em;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 25dvw;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 1   ===========*/
+
+.BrainJuice_Qs1 
+{
+    background-color: #f5f5f5;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 2   ===========*/
+
+.BrainJuice_Qs2
+{
+    padding-top: 25px;
+}
+
+
+/*===========   Main Lesson Setup   ===========*/
+
+.MainLesson_Setup
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson update1   ===========*/
+
+.MainLesson_Update1
+{
+    height: 40em; 
+    grid-template-rows: 140px 1fr 1fr 1fr;
+}
+
+/*===========   Main Lesson next2   ===========*/
+
+.MainLesson_Next2
+{
+    height: 30em;
+    grid-template-rows: .8fr .5fr .6fr;
+}
+
+
+/*===========   Main Lesson update2   ===========*/
+
+.MainLesson_Update2
+{
+    height: 51em;
+}
+
+
+/*===========   Main Lesson next3   ===========*/
+
+.MainLesson_Next3
+{
+    height: 25em;
+    display: grid;   
+    grid-template-rows: .24fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+/*===========   Main Lesson update3   ===========*/
+
+.MainLesson_Update3
+{
+    height: 40em;
+}
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    /*
+    height: 11em;*/
+    height: 45dvw;
+}
+
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 0;
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext4 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext4_ANS
+{
+
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    /*
+    height: 11.5em;*/
+    height: 45dvw;
+    grid-template-rows: 100px auto 1fr;
+}
+
+
+/*===========   Main Lesson update4 Answer EXPANDS   ===========*/
+
+.MainLesson_Update4_ANS
+{
+}
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    /*
+    height: 9em;*/
+    height: 38dvw;
+    grid-template-rows: 50px auto 1fr;
+}
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 0;
+}
+
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext5 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext5_ANS
+{
+    height: 7em;
+}
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    /*
+    height: 11.5em;*/
+    height: 45dvw;
+    grid-template-rows: 100px auto 1fr;
+}
+
+
+/*===========   Main Lesson update5 Answer EXPANDS   ===========*/
+
+.MainLesson_Update5_ANS
+{
+}
+
+/*===========   Main Lesson last update   ===========*/
+
+.MainLesson_LastUpdate
+{
+    height: 30em; 
+    grid-template-rows: .8fr 1.4fr 1fr 1fr;
+}
+
+
+/*===========   Main Lesson output   ===========*/
+
+.MainLesson_Output
+{
+    height: 25em;
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-size:350px;
+    overflow: visible;
+}
+
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+    display: flex;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    line-height: 3;
+    text-align: center;
+
+}
+
+
+/*===========   Claire's Problem   ===========*/
+
+.ClairesProblem
+{
+    height: 28em;
+    display: grid;   
+    grid-template-rows: 5rem 60px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    grid-template-rows: 120px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Radio li
+{
+
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 90%;
+    margin-left:40px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -25px;
+}
+
+/*===========   Claire's Problem Answer EXPANDS   ===========*/
+
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+}
+
+/* normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+
+
+
+
+
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+    height: 75px;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*===========   Check Understanding w/remark question  ===========*/
+
+.CheckUnderstanding_Remark
+{
+    height: 8em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*===========   Check Understanding remark   ===========*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+    height: 80px;
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 4em
+when Answer appear, height:  */
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*===========   Check Understanding Quiz1   ===========*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz1 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*===========   Check Understanding Quiz2   ===========*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz2 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+/*===========   Dijkstra Algorithm Review Terms   ===========*/
+
+.DA_Terms
+{
+    height: 28em;
+    grid-template-rows: 5rem .2fr 3fr;
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 5px;
+}
+
+
+/*===========   Dijkstra Algorithm Note EXPANDS   ===========*/
+
+.DA_Terms_Note
+{
+    height: 80px;
+}
+
+
+/*===========   Dijkstra Algorithm Limitations   ===========*/
+
+.DA_Limits
+{
+    height: 22em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*===========   Dijkstra's ALGORITHM pic   ===========*/
+
+.DA_Algorithm
+{
+    height: 15em;
+}
+
+
+/*===========   Applications   ===========*/
+
+.Applications
+{
+    height: 29em;
+}
+
+
+.app_bullets li
+{
+    width: 55dvw;
+}
+
+
+.app_bullets_microchip::before
+{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+
+.app_bullets_maps::before
+{
+    position: relative;
+    top: -9px;
+    left: 3px;
+}
+
+
+.app_bullets_truck::before
+{
+
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+
+/*===========   Conclusion   ===========*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+
+/*===========   Footer   ===========*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint_active
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+}
+
+
+
+.button_hintMore
+{
+    width: 250px;
+}
+
+
+.button_hintMore_active
+{
+    width: 250px;
+}
+
+
+
+.btn_submit
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+  padding-top: 8px;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+  padding-top: 8px;
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+
+
+
+}
+
+
+/*MOBILE to 480*/
+@media (min-width:451px) and (max-width: 490px)
+{
+
+html
+{
+    font-size: 6.66666666666667px;
+    overflow-x: hidden;
+}
+
+body
+{
+    overflow-x: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main
+{
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+input 
+{
+    width: 20px;
+    height: 20px;
+}
+
+/*===========   Header   ===========*/
+
+.Header_Name a
+{
+    font-size: 50px;
+}
+
+
+.Bio p
+{
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+}
+
+
+.Bio_divider hr
+{
+
+}
+
+
+.Nav_contact
+{ 
+    font-size: 17px;
+    position: relative;
+    top: -8px;
+}
+
+.Bio_divider hr
+{
+    top:-18.5px;
+}
+
+
+
+
+/*===========   TitleCard   ===========*/
+
+.TitleCard
+{
+}
+
+.TitleCard img
+{
+
+}
+
+
+
+/*===========   Intro   ===========*/
+
+.Intro
+{
+    height: 20.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*===========   Claire Story Intro   ===========*/
+
+.Claire_Intro
+{
+    height: 40em;
+    grid-template-rows: 5rem 220px 150px 250px .6fr;
+}
+
+
+.Claire_Intro .two p
+{
+    position: relative;
+    top: -1dvw;
+}
+
+/*===========   Pre Lesson Intro   ===========*/
+
+.PreLesson_Intro
+{
+    height: 18em;
+}
+
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 0;
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+
+
+/*===========   Pre Lesson Graph1   ===========*/
+
+.PreLesson_Graph1
+{
+    height: 26em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+
+}
+
+.PreLesson_Graph1 .Node
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Graph2   ===========*/
+
+.PreLesson_Graph2
+{
+    height: 23em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 80%;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    grid-row: 1/2;
+}
+
+
+
+/*===========   Pre Lesson Graph3   ===========*/
+
+.PreLesson_Graph3
+{
+    height: 31em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr auto;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-row: 2/3;
+
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 1/2;
+}
+
+
+.PreLesson_Graph3 .Roads
+{
+    justify-content: space-evenly;
+    margin-bottom: 5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 0;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left: 0;
+}
+
+
+
+/*===========   Pre Lesson Graph4   ===========*/
+
+.PreLesson_Graph4
+{
+    height: 20em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Convert Map   ===========*/
+
+.PreLesson_ConvertMap
+{
+    height: 23em;
+}
+
+
+/*===========   Brain Juice Intro   ===========*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+}
+
+.BrainJuice_Intro .Headline
+{
+    width: 350px;
+    padding-left: 15px;
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS   ===========*/
+
+.BrainJuice_Qs
+{
+    height: 5em;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 25dvw;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 1   ===========*/
+
+.BrainJuice_Qs1 
+{
+    background-color: #f5f5f5;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 2   ===========*/
+
+.BrainJuice_Qs2
+{
+    padding-top: 25px;
+}
+
+
+/*===========   Main Lesson Setup   ===========*/
+
+.MainLesson_Setup
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson update1   ===========*/
+
+.MainLesson_Update1
+{
+    height: 40em; 
+    grid-template-rows: 140px 1fr 1fr 1fr;
+}
+
+/*===========   Main Lesson next2   ===========*/
+
+.MainLesson_Next2
+{
+    height: 30em;
+    grid-template-rows: .8fr .5fr .6fr;
+}
+
+
+/*===========   Main Lesson update2   ===========*/
+
+.MainLesson_Update2
+{
+    height: 52em;
+}
+
+
+/*===========   Main Lesson next3   ===========*/
+
+.MainLesson_Next3
+{
+    height: 25em;
+    display: grid;   
+    grid-template-rows: .24fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+/*===========   Main Lesson update3   ===========*/
+
+.MainLesson_Update3
+{
+    height: 48em;
+}
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    height: 11em;
+}
+
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 0;
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext4 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext4_ANS
+{
+
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    height: 12em;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update4 Answer EXPANDS   ===========*/
+
+.MainLesson_Update4_ANS
+{
+}
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    height: 9em;
+    grid-template-rows: 50px auto 1fr;
+}
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 0;
+}
+
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext5 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext5_ANS
+{
+}
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    height: 12em;
+    grid-template-rows: 120px auto 1fr;
+}
+
+
+/*===========   Main Lesson update5 Answer EXPANDS   ===========*/
+
+.MainLesson_Update5_ANS
+{
+}
+
+/*===========   Main Lesson last update   ===========*/
+
+.MainLesson_LastUpdate
+{
+    height: 30em; 
+    grid-template-rows: .8fr 1.4fr 1fr 1fr;
+}
+
+
+/*===========   Main Lesson output   ===========*/
+
+.MainLesson_Output
+{
+    height: 25em;
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-size:350px;
+    overflow: visible;
+}
+
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+    display: flex;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    line-height: 3;
+    text-align: center;
+
+}
+
+
+/*===========   Claire's Problem   ===========*/
+
+.ClairesProblem
+{
+    height: 28em;
+    display: grid;   
+    grid-template-rows: 5rem 60px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    grid-template-rows: 120px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Radio li
+{
+
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 90%;
+    margin-left:40px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -25px;
+}
+
+/*===========   Claire's Problem Answer EXPANDS   ===========*/
+/*
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+}
+*/
+/* normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+/*
+.ClareCelebrating
+{
+    width: 700px;
+    top: -205px;
+    left: -5px;
+}
+
+*/
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+    height: 75px;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*===========   Check Understanding w/remark question  ===========*/
+
+.CheckUnderstanding_Remark
+{
+    height: 10em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*===========   Check Understanding remark   ===========*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+    height: 80px;
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 4em
+when Answer appear, height:  */
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*===========   Check Understanding Quiz1   ===========*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz1 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*===========   Check Understanding Quiz2   ===========*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz2 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+/*===========   Dijkstra Algorithm Review Terms   ===========*/
+
+.DA_Terms
+{
+    height: 28em;
+    grid-template-rows: 5rem .2fr 3fr;
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 5px;
+}
+
+
+/*===========   Dijkstra Algorithm Note EXPANDS   ===========*/
+
+.DA_Terms_Note
+{
+    height: 80px;
+}
+
+
+/*===========   Dijkstra Algorithm Limitations   ===========*/
+
+.DA_Limits
+{
+    height: 23em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*===========   Dijkstra's ALGORITHM pic   ===========*/
+
+.DA_Algorithm
+{
+    height: 15em;
+}
+
+
+/*===========   Applications   ===========*/
+
+.Applications
+{
+    height: 29em;
+}
+
+
+.app_bullets li
+{
+    width: 55dvw;
+}
+
+
+.app_bullets_microchip::before
+{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+
+.app_bullets_maps::before
+{
+    position: relative;
+    top: -9px;
+    left: 3px;
+}
+
+
+.app_bullets_truck::before
+{
+
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+
+/*===========   Conclusion   ===========*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+
+/*===========   Footer   ===========*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint_active
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+}
+
+
+
+.button_hintMore
+{
+    width: 250px;
+}
+
+
+.button_hintMore_active
+{
+    width: 250px;
+}
+
+
+
+.btn_submit
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+
+
+
+}
+
+
+/*MOBILE to 480*/
+@media (min-width:398px) and (max-width: 450px)
+{
+
+html
+{
+    font-size: 6.66666666666667px;
+    overflow-x: hidden;
+}
+
+body
+{
+    overflow-x: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main
+{
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+
+input 
+{
+    width: 20px;
+    height: 20px;
+}
+/*===========   Header   ===========*/
+
+.Header
+{
+    height: 160px;
+}
+
+
+.Header_Name a
+{
+    font-size: 50px;
+}
+
+
+.Bio p
+{
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+}
+
+
+.Bio_divider hr
+{
+
+}
+
+
+.Nav_contact
+{ 
+    font-size: 17px;
+    position: relative;
+    top: -8px;
+}
+
+.Bio_divider hr
+{
+    top:-18.5px;
+}
+
+
+/*===========   TitleCard   ===========*/
+
+.TitleCard
+{
+}
+
+.TitleCard img
+{
+
+}
+
+
+
+/*===========   Intro   ===========*/
+
+.Intro
+{
+    height: 20.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*===========   Claire Story Intro   ===========*/
+
+.Claire_Intro
+{
+    height: 40em;
+    grid-template-rows: 5rem 230px 150px 250px .6fr;
+}
+
+.Claire_Intro .one img
+{
+    grid-column: 2/3;
+    width: 30dvw;
+    max-width: 350px;
+    place-self: end;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+
+.Claire_Intro .two img
+{
+    grid-column: 1/2;
+    width: 18dvw;
+    max-width: 300px;
+    place-self: center;
+
+}
+
+
+.Claire_Intro .two p
+{
+    position: relative;
+    top: -1dvw;
+}
+
+/*===========   Pre Lesson Intro   ===========*/
+
+.PreLesson_Intro
+{
+    height: 18em;
+}
+
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 0;
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+
+
+/*===========   Pre Lesson Graph1   ===========*/
+
+.PreLesson_Graph1
+{
+    height: 26em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+
+}
+
+.PreLesson_Graph1 .Node
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Graph2   ===========*/
+
+.PreLesson_Graph2
+{
+    height: 23em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 80%;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    grid-row: 1/2;
+}
+
+
+
+/*===========   Pre Lesson Graph3   ===========*/
+
+.PreLesson_Graph3
+{
+    height: 31em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr auto;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-row: 2/3;
+
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 1/2;
+}
+
+
+.PreLesson_Graph3 .Roads
+{
+    justify-content: space-evenly;
+    margin-bottom: 5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 0;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left:0;
+}
+
+
+
+/*===========   Pre Lesson Graph4   ===========*/
+
+.PreLesson_Graph4
+{
+    height: 20em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Convert Map   ===========*/
+
+.PreLesson_ConvertMap
+{
+    height: 23em;
+}
+
+
+/*===========   Brain Juice Intro   ===========*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+}
+
+.BrainJuice_Intro .Headline
+{
+    width: 350px;
+    padding-left: 15px;
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS   ===========*/
+
+.BrainJuice_Qs
+{
+    height: 6em;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 25dvw;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 1   ===========*/
+
+.BrainJuice_Qs1 
+{
+    background-color: #f5f5f5;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 2   ===========*/
+
+.BrainJuice_Qs2
+{
+    padding-top: 25px;
+}
+
+
+/*===========   Main Lesson Setup   ===========*/
+
+.MainLesson_Setup
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson update1   ===========*/
+
+.MainLesson_Update1
+{
+    height: 40em; 
+    grid-template-rows: 140px 1fr 1fr 1fr;
+}
+
+/*===========   Main Lesson next2   ===========*/
+
+.MainLesson_Next2
+{
+    height: 30em;
+    grid-template-rows: .8fr .5sfr .6fr;
+}
+
+
+/*===========   Main Lesson update2   ===========*/
+
+.MainLesson_Update2
+{
+    height: 56em;
+}
+
+
+/*===========   Main Lesson next3   ===========*/
+
+.MainLesson_Next3
+{
+    height: 25em;
+    display: grid;   
+    grid-template-rows: .24fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+/*===========   Main Lesson update3   ===========*/
+
+.MainLesson_Update3
+{
+    height: 48em;
+}
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    height: 11em;
+}
+
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 0;
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext4 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext4_ANS
+{
+
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    height: 11.5em;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update4 Answer EXPANDS   ===========*/
+
+.MainLesson_Update4_ANS
+{
+}
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    height: 8em;
+    grid-template-rows: 50px auto 1fr;
+}
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 0;
+}
+
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext5 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext5_ANS
+{
+}
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    height: 11.5em;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update5 Answer EXPANDS   ===========*/
+
+.MainLesson_Update5_ANS
+{
+}
+
+/*===========   Main Lesson last update   ===========*/
+
+.MainLesson_LastUpdate
+{
+    height: 30em; 
+    grid-template-rows: .8fr 1.4fr 1fr 1fr;
+}
+
+
+/*===========   Main Lesson output   ===========*/
+
+.MainLesson_Output
+{
+    height: 25em;
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-size:350px;
+    overflow: visible;
+}
+
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+    display: flex;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    line-height: 3;
+    text-align: center;
+
+}
+
+
+/*===========   Claire's Problem   ===========*/
+
+.ClairesProblem
+{
+    height: 29em;
+    display: grid;   
+    grid-template-rows: 5rem 60px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    height: 23em;
+    grid-template-rows: 120px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Radio li
+{
+
+    margin: .5rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 90%;
+    margin-left:40px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -25px;
+}
+
+/*===========   Claire's Problem Answer EXPANDS   ===========*/
+
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+}
+
+/* normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+
+.ClareCelebratingGIF
+{
+    width: 700px;
+    position: absolute;
+    top: -285px;
+    left: -4px;
+}
+
+
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+    height: 75px;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*===========   Check Understanding w/remark question  ===========*/
+
+.CheckUnderstanding_Remark
+{
+    height: 10em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*===========   Check Understanding remark   ===========*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+    height: 80px;
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 4em
+when Answer appear, height:  */
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*===========   Check Understanding Quiz1   ===========*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13.5em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz1 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*===========   Check Understanding Quiz2   ===========*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz2 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+/*===========   Dijkstra Algorithm Review Terms   ===========*/
+
+.DA_Terms
+{
+    height: 34em;
+    grid-template-rows: 5rem .2fr 3fr;
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 5px;
+}
+
+
+/*===========   Dijkstra Algorithm Note EXPANDS   ===========*/
+
+.DA_Terms_Note
+{
+    height: 80px;
+}
+
+
+/*===========   Dijkstra Algorithm Limitations   ===========*/
+
+.DA_Limits
+{
+    height: 26em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*===========   Dijkstra's ALGORITHM pic   ===========*/
+
+.DA_Algorithm
+{
+    height: 13em;
+}
+
+
+/*===========   Applications   ===========*/
+
+.Applications
+{
+    height: 29em;
+}
+
+
+.app_bullets li
+{
+    width: 55dvw;
+}
+
+
+.app_bullets_microchip::before
+{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+
+.app_bullets_maps::before
+{
+    position: relative;
+    top: -9px;
+    left: 3px;
+}
+
+
+.app_bullets_truck::before
+{
+
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+
+/*===========   Conclusion   ===========*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+
+/*===========   Footer   ===========*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint_active
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+}
+
+
+
+.button_hintMore
+{
+    width: 250px;
+}
+
+
+.button_hintMore_active
+{
+    width: 250px;
+}
+
+
+
+.btn_submit
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+
+
+
+}
+
+
+/*MOBILE to 480*/
+@media (min-width:320px) and (max-width: 397px)
+{
+
+html
+{
+    font-size: 6.66666666666667px;
+    overflow-x: hidden;
+}
+
+body
+{
+    overflow-x: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.main
+{
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+
+input 
+{
+    width: 20px;
+    height: 20px;
+}
+/*===========   Header   ===========*/
+
+.Header
+{
+    height: 150px;
+}
+
+.Header_Name a
+{
+    font-size: 40px;
+}
+
+
+.Bio p
+{
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+}
+
+
+.Bio_divider hr
+{
+    width: 80dvw;
+}
+
+
+.Nav_contact
+{ 
+    font-size: 17px;
+    position: relative;
+    top: -8px;
+}
+
+.Bio_divider hr
+{
+    top:-18.5px;
+}
+
+
+/*===========   TitleCard   ===========*/
+
+.TitleCard
+{
+}
+
+.TitleCard img
+{
+
+}
+
+
+
+/*===========   Intro   ===========*/
+
+.Intro
+{
+    height: 20.2em;
+    display: flex;   
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/*===========   Claire Story Intro   ===========*/
+
+.Claire_Intro
+{
+    height: 41em;
+    grid-template-rows: 5rem 250px 150px 250px .6fr;
+}
+
+
+.Claire_Intro .one img
+{
+    grid-column: 2/3;
+    width: 30dvw;
+    max-width: 350px;
+    place-self: end;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+
+.Claire_Intro .two img
+{
+    grid-column: 1/2;
+    width: 18dvw;
+    max-width: 300px;
+    place-self: center;
+
+}
+
+
+.Claire_Intro .two p
+{
+    position: relative;
+    top: -1dvw;
+}
+
+/*===========   Pre Lesson Intro   ===========*/
+
+.PreLesson_Intro
+{
+    height: 18em;
+}
+
+
+.PreLesson_Intro .DiffGraphs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.PreLesson_Intro .DiffGraphs img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 0;
+    width: 25%;
+    aspect-ratio: 1;
+}
+
+
+
+/*===========   Pre Lesson Graph1   ===========*/
+
+.PreLesson_Graph1
+{
+    height: 26em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+
+}
+
+.PreLesson_Graph1 .Node
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph1 .Node img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph1 .NodeExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Graph2   ===========*/
+
+.PreLesson_Graph2
+{
+    height: 23em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph2 .Weighted
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph2 .Weighted img
+{
+    width: 80%;
+}
+
+
+.PreLesson_Graph2 .WeightedExpl
+{
+    grid-row: 1/2;
+}
+
+
+
+/*===========   Pre Lesson Graph3   ===========*/
+
+.PreLesson_Graph3
+{
+    height: 31em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr auto;
+}
+
+.PreLesson_Graph3 .Digraphex
+{
+    grid-row: 2/3;
+
+}
+
+.PreLesson_Graph3 .Digraphex img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph3 .DigraphExpl
+{
+    grid-column: 1/2;
+}
+
+
+.PreLesson_Graph3 .Roads
+{
+    justify-content: space-evenly;
+    margin-bottom: 5dvw;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(1)
+{
+    width: 20%;
+    margin-right: 0;
+}
+
+.PreLesson_Graph3 .Roads img:nth-child(2)
+{
+    width: 35%;
+    margin-left:0;
+}
+
+
+
+
+/*===========   Pre Lesson Graph4   ===========*/
+
+.PreLesson_Graph4
+{
+    height: 20em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .7fr 1fr;
+}
+
+.PreLesson_Graph4 .WDigraph
+{
+    grid-row: 2/3;
+}
+
+.PreLesson_Graph4 .WDigraph img
+{
+    width: 80%;
+}
+
+.PreLesson_Graph4 .WDigraphExpl
+{
+    grid-row: 1/2;
+}
+
+
+/*===========   Pre Lesson Convert Map   ===========*/
+
+.PreLesson_ConvertMap
+{
+    height: 23em;
+}
+
+
+/*===========   Brain Juice Intro   ===========*/
+
+.BrainJuice_Intro
+{
+    height: 6.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+}
+
+.BrainJuice_Intro .Headline
+{
+    width: 350px;
+    padding-left: 15px;
+}
+
+.BrainJuice_Intro .B4weJump
+{
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS   ===========*/
+
+.BrainJuice_Qs
+{
+    height: 6em;
+}
+/*
+closed: 8em
+btn 1: 
+btn 2:
+*/
+
+
+.BrainJuice_Qs .Button1
+{
+    position: relative;
+    left: 25dvw;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 1   ===========*/
+
+.BrainJuice_Qs1 
+{
+    background-color: #f5f5f5;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.BrainJuice_Qs1 .Question2
+{
+
+     padding-left: 15px;
+     padding-right: 15px;
+
+     display: grid;
+}
+
+.BrainJuice_Qs1 .Question2 #text
+{
+    background-color: #fafafa;
+    border: 15px solid #fafafa;
+    
+    border-radius: 5px;
+
+    font-size: 2.1rem;
+}
+
+.BrainJuice_Qs1 .Question2 .Button2
+{
+    place-self: center;
+    margin-bottom: 15px;
+}
+
+
+/*===========   Brain Juice Question EXPANDS 2   ===========*/
+
+.BrainJuice_Qs2
+{
+    padding-top: 25px;
+}
+
+
+/*===========   Main Lesson Setup   ===========*/
+
+.MainLesson_Setup
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson update1   ===========*/
+
+.MainLesson_Update1
+{
+    height: 40em; 
+    grid-template-rows: 140px 1fr 1fr 1fr;
+}
+
+/*===========   Main Lesson next2   ===========*/
+
+.MainLesson_Next2
+{
+    height: 28em;
+    grid-template-rows: .8fr 160px .6fr;
+}
+
+
+/*===========   Main Lesson update2   ===========*/
+
+.MainLesson_Update2
+{
+    height: 55em;
+}
+
+
+/*===========   Main Lesson next3   ===========*/
+
+.MainLesson_Next3
+{
+    height: 24em;
+    display: grid;   
+    grid-template-rows: .24fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+
+/*===========   Main Lesson update3   ===========*/
+
+.MainLesson_Update3
+{
+    height: 48em;
+}
+
+
+
+/*===========   Main Lesson choosenext4   ===========*/
+
+.MainLesson_ChooseNext4
+{
+    height: 11em;
+}
+
+
+.MainLesson_ChooseNext4 .Options
+{
+    margin-left: 0;
+
+}
+
+.MainLesson_ChooseNext4 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext4 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext4_ANS
+{
+
+}
+
+
+/*===========   Main Lesson update4   ===========*/
+
+.MainLesson_Update4
+{
+    height: 11.5em;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update4 Answer EXPANDS   ===========*/
+
+.MainLesson_Update4_ANS
+{
+}
+
+/*===========   Main Lesson choosenext5   ===========*/
+
+.MainLesson_ChooseNext5
+{
+    height: 8em;
+    grid-template-rows: 50px auto 1fr;
+}
+
+.MainLesson_ChooseNext5 .Options
+{
+    margin-left: 0;
+}
+
+
+.MainLesson_ChooseNext5 .Radio ul
+{
+    padding-left: 0;
+}
+
+
+/*===========   Main Lesson choosenext5 Answer EXPANDS   ===========*/
+
+.MainLesson_ChooseNext5_ANS
+{
+}
+
+
+/*===========   Main Lesson update5   ===========*/
+
+.MainLesson_Update5
+{
+    height: 11.5em;
+    grid-template-rows: 130px auto 1fr;
+}
+
+
+/*===========   Main Lesson update5 Answer EXPANDS   ===========*/
+
+.MainLesson_Update5_ANS
+{
+}
+
+/*===========   Main Lesson last update   ===========*/
+
+.MainLesson_LastUpdate
+{
+    height: 30em; 
+    grid-template-rows: .8fr 160px 1fr 1fr;
+}
+
+
+/*===========   Main Lesson output   ===========*/
+
+.MainLesson_Output
+{
+    height: 25em;
+}
+
+.MainLesson_Output .Congrats div
+{
+    background-size:350px;
+    overflow: visible;
+}
+
+
+.MainLesson_Output .Output
+{
+    grid-row: 3/4;
+    justify-self: center;
+    display: flex;
+
+}
+
+.MainLesson_Output .Output p
+{
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    line-height: 3;
+    text-align: center;
+
+}
+
+
+/*===========   Claire's Problem   ===========*/
+
+.ClairesProblem
+{
+    height: 33em;
+    display: grid;   
+    grid-template-rows: 5rem 60px 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+}
+
+
+.ClairesProblem .Box
+{
+    background-color: #f5f5f5;
+    display: grid;    
+    height: 27em;
+    grid-template-rows: 150px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+    border-top: 25px solid #ffffff;
+}
+
+.ClairesProblem .Box .Radio li
+{
+
+    margin: .5rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+.ClairesProblem .Box .Radio ul
+{
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.ClairesProblem .Box .Radio ul li label p
+{
+    width: 90%;
+    margin-left:40px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    position: relative;
+    top: -25px;
+}
+
+/*===========   Claire's Problem Answer EXPANDS   ===========*/
+
+.ClairesProblem_ANS
+{
+    background-color: #f5f5f5;
+    height: .5em;
+    display: grid;    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+}
+
+/* normal answer: height: 18rem/7.2em
+correct answer: 40dvw*/
+
+
+
+
+
+.ClairesProblem_ANS_Btn
+{
+    background-color: #f5f5f5;
+    height: 75px;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.clairesAnswer_submit
+{
+    justify-self: center;
+}
+
+/*===========   Check Understanding w/remark question  ===========*/
+
+.CheckUnderstanding_Remark
+{
+    height: 11em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Remark .Headline
+{
+
+}
+
+.CheckUnderstanding_Remark .Headline h1
+{
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question
+{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+
+
+    margin-top: 15px;
+}
+
+.CheckUnderstanding_Remark .Question img
+{
+    width: 3.5rem;
+    height: 4.54545455rem;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    padding-right: 15px;
+}
+
+.CheckUnderstanding_Remark .Question p
+{
+
+}
+
+/*===========   Check Understanding remark   ===========*/
+
+.CheckUnderstanding_Remark_ANS
+{
+    background-color: #f5f5f5;
+    height: 80px;
+    display: grid;    
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+/* unlciked: height: 4em
+when Answer appear, height:  */
+
+.CheckUnderstanding_Remark_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p
+{
+    position: relative;
+    top: 3dvw;
+    margin: 0;
+
+    display: grid;
+
+    padding-bottom: 30px;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(1)
+{
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .Expl p img:nth-child(2)
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-self: center;
+}
+
+.CheckUnderstanding_Remark_ANS .remark1_revealSubmit
+{
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+}
+
+.Digraph
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height:auto;
+
+}
+
+.Digraph img
+{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 1819/1000;
+    object-fit: contain;
+}
+
+
+
+/*===========   Check Understanding Quiz1   ===========*/
+
+.CheckUnderstanding_Quiz1
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 13.5em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz1 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz1 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz1 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz1 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz1 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz1_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p
+{/*
+    position: relative;
+    top: 3.5dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz1_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+.CheckUnderstanding_Quiz1_ANS .checkQs1_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+/*===========   Check Understanding Quiz2   ===========*/
+
+.CheckUnderstanding_Quiz2
+{
+    background-color: #f5f5f5;
+
+    border-top: 25px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+
+    height: 14em;
+    display: grid;  
+    grid-template-rows: 80px auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+}
+
+.CheckUnderstanding_Quiz2 .Question
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Question p
+{
+    margin-top: 5px;
+}
+
+.CheckUnderstanding_Quiz2 .Radio
+{
+
+}
+
+.CheckUnderstanding_Quiz2 .Radio ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    display: grid;
+    justify-content: start;
+}
+
+.CheckUnderstanding_Quiz2 .Radio li
+{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    justify-self: start ;
+}
+
+/*===========   Check Understanding Quiz2 Answer EXPANDS   ===========*/
+
+.CheckUnderstanding_Quiz2_ANS
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    display: grid;    
+    grid-template-rows: auto 70px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    border-right: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl
+{
+    display: flex;
+    align-content: flex-start;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p
+{/*
+    position: relative;
+    top: 3dvw;*/
+    margin: 0;
+}
+
+.CheckUnderstanding_Quiz2_ANS .Expl p span
+{
+    font-weight: 500;
+}
+
+
+.CheckUnderstanding_Quiz2_ANS .checkQs2_submit
+{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+}
+
+
+/*===========   Dijkstra Algorithm Review Terms   ===========*/
+
+.DA_Terms
+{
+    height: 35em;
+    grid-template-rows: 5rem .2fr 3fr;
+}
+
+.DA_Terms .Review ul
+{
+    padding-left: 5px;
+}
+
+
+/*===========   Dijkstra Algorithm Note EXPANDS   ===========*/
+
+.DA_Terms_Note
+{
+    height: 80px;
+}
+
+
+/*===========   Dijkstra Algorithm Limitations   ===========*/
+
+.DA_Limits
+{
+    height: 25em;
+    display: grid;   
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.DA_Limits .Title
+{
+
+}
+
+.DA_Limits .Title p
+{
+    font-weight: 500;
+}
+
+.DA_Limits .One
+{
+
+}
+
+.DA_Limits .One p
+{
+
+}
+
+/*===========   Dijkstra's ALGORITHM pic   ===========*/
+
+.DA_Algorithm
+{
+    height: 15em;
+}
+
+
+/*===========   Applications   ===========*/
+
+.Applications
+{
+    height: 29em;
+}
+
+
+.app_bullets li
+{
+    width: 55dvw;
+}
+
+
+.app_bullets_microchip::before
+{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+
+.app_bullets_maps::before
+{
+    position: relative;
+    top: -9px;
+    left: 3px;
+}
+
+
+.app_bullets_truck::before
+{
+
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+
+/*===========   Conclusion   ===========*/
+
+.Conclusion
+{
+    
+    height: 16m;
+    display: grid;    
+    grid-template-rows: 5rem auto;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion .Headline
+{
+
+}
+
+.Conclusion .Headline h1
+{
+    margin-top: 15px;
+}
+
+.Conclusion .Outro
+{
+
+}
+
+
+.Conclusion .Outro p
+{
+
+}
+
+
+
+
+
+.Conclusion-Animation
+{
+    height: 8em;
+    display: grid;    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.Conclusion-Animation .Bye
+{
+    width: 100%;
+    display: grid;
+    align-self: start;
+    position: relative;
+    top: -8dvw;
+    overflow: hidden;
+}
+
+.Conclusion-Animation .Bye img
+{
+    width: 120%;
+    max-width: 970px;
+   place-self: center;
+   z-index: -10;
+}
+
+
+/*===========   Footer   ===========*/
+
+.Footer
+{ 
+    background-color: rgb(243, 173, 52,100%); 
+    height: 130px;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.Footer .ScrollUp
+{
+    position: relative;
+    top: 20px;
+}
+
+.Footer .ScrollUp .BackToTop
+{
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.Footer .Credit
+{
+    position: relative;
+    top: 35px;
+}
+
+.Footer .Credit p
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+
+
+
+/*===========   Buttons   ===========*/
+
+.button_hint
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint_active
+{
+    width: 100px;
+    height: 51px;
+}
+
+.button_hint p
+{
+    font-size: 2.4rem;
+}
+
+.button_hint_active p
+{
+    font-size: 2.4rem;
+}
+
+
+
+.button_hintMore
+{
+    width: 250px;
+}
+
+
+.button_hintMore_active
+{
+    width: 250px;
+}
+
+
+
+.btn_submit
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when answer is clicked*/
+.btn_submit_active
+{
+    width: 100px;
+    height: 50px;
+}
+
+
+/*when it says submit, before click submit*/
+.btn_submit p
+{
+  font-size: 2.4rem;
+
+
+}
+
+
+.btn_submit_active p
+{
+  font-size: 2.4rem;
+
+}
+
+
+
+
+
+.button_RevealRemark1
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1_active
+{
+    width: 150px;
+    height: 40px;
+}
+
+
+.button_RevealRemark1 p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+.button_RevealRemark1_active p
+{
+    font-size: 2.4rem;
+    margin:0;
+    padding-top: 8px;
+}
+
+
+
+
+}
