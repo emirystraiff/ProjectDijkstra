@@ -58,29 +58,6 @@ backToTop.addEventListener('click', function()
 });
 
 
-$('.gallery1').magnificPopup(
-    { // the containers for all your galleries
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        titleSrc: 'title',
-        cursor: 'mfp-zoom-out-cur',
-        showCloseBtn: false,
-        closeOnContentClick: true
-
-    });
-
-$('.gallery').magnificPopup(
-    { // the containers for all your galleries
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        cursor: true,
-        titleSrc: 'title',
-        showCloseBtn: false,
-        closeOnContentClick: true
-
-    });
-
-
 
 // ========================== Above is scroll ==============================
 
