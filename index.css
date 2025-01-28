@@ -5557,7 +5557,7 @@ padding-bottom: 3px;
    
 }
 
-@media (min-width:581px) and (max-width: 768px)
+@media screen (min-width:581px) and (max-width: 768px)
 {
         
 html
@@ -6847,7 +6847,7 @@ when Answer appear, height:  */
 }
 
 /*iPad / Tablet*/
-@media (min-width:491px) and (max-width: 580px)
+@media screen (min-width:491px) and (max-width: 580px)
 {
 
     .Bio_divider hr
@@ -8164,7 +8164,7 @@ when Answer appear, height:  */
 
 
 /*MOBILE to 480*/
-@media (min-width:451px) and (max-width: 490px)
+@media screen (min-width:451px) and (max-width: 490px)
 {
 
 html
@@ -9468,7 +9468,7 @@ when Answer appear, height:  */
 
 
 /*MOBILE to 480*/
-@media (min-width:398px) and (max-width: 450px)
+@media screen (min-width:398px) and (max-width: 450px)
 {
 
 html
@@ -10797,7 +10797,7 @@ when Answer appear, height:  */
 
 
 /*MOBILE to 480*/
-@media (min-width:320px) and (max-width: 397px)
+@media screen (min-width:320px) and (max-width: 397px)
 {
 
 html
