@@ -1,4 +1,90 @@
 
+function smoothScroll (target, duration)
+{
+    // method used for searching and returning the very first element within the document that matches the given selector.
+    var target = document.querySelector(target);
+
+    // returns the size of an element and its position relative to the viewport, returns a DOMrect object with eight properties; left, top, right, bottom, x, y, width, height.
+    // so ex. if the element is "back to top link", then it will return the position relative to the link.
+    //var targetPosition = target.getBoundingClientRect().top;
+    var targetPosition = 0;
+
+    // returns the number of pixels the document is currently scrolled along the vertical axis. the value 0.0 is the top edge of the document that is aligned with the top edge of the windows content area. 
+    // slightly better support for pageYoffset than for scrollY in older browsers.
+    var startPosition = window.pageYOffset;
+
+    var distance = targetPosition - startPosition;
+
+    var startTime = null;
+
+    function animation(currentTime)
+    {
+        if(startTime === null)
+            startTime = currentTime;
+        
+        var timeElasped = currentTime - startTime;
+
+        var run = ease(timeElasped, startPosition, distance, duration);
+
+        window.scrollTo(0, run);
+
+        if(timeElasped < duration)
+            requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) 
+    {
+        t /= d / 2;
+        if (t < 1) 
+            return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+
+    }
+
+    //window.requestAnimationFrame()
+    // method tells the browser that you wish to perform an animation and requests that the browser call a specified funtion to update an animation before the next repaint. 
+    // 60 fps refresh rate
+    // basically makes your animations look very nice and very smooth
+    //keeps track of time
+    requestAnimationFrame(animation);
+}
+
+var backToTop = document.querySelector('.BackToTop');
+
+backToTop.addEventListener('click', function()
+{
+    smoothScroll('.BackToTop', 1500);
+});
+
+
+$('.gallery1').magnificPopup(
+    { // the containers for all your galleries
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        titleSrc: 'title',
+        cursor: 'mfp-zoom-out-cur',
+        showCloseBtn: false,
+        closeOnContentClick: true
+
+    });
+
+$('.gallery').magnificPopup(
+    { // the containers for all your galleries
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        cursor: true,
+        titleSrc: 'title',
+        showCloseBtn: false,
+        closeOnContentClick: true
+
+    });
+
+
+
+// ========================== Above is scroll ==============================
+
+
 const MobileMediaScreen1 = window.matchMedia('(min-width:320px) and (max-width: 397px)');
 const MobileMediaScreen2 = window.matchMedia('(min-width:398px) and (max-width: 450px)');
 const MobileMediaScreen3 = window.matchMedia('(min-width:451px) and (max-width: 490px)');
