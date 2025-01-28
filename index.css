@@ -11142,7 +11142,7 @@ btn 2:
 
 .BrainJuice_Qs1 
 {
-    background-color: #f5f5f5;
+    background: #f5f5f5;
     display: grid;  
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
